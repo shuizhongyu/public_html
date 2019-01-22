@@ -14,10 +14,33 @@ body {
  }
 </style>
 
-    <title>李璐爱诗词，更爱鑫鑫</title>	
-    <body><font size="12">
-	<span id="jinrishici-sentence" style="text-align: center;display:block;">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<title>李璐爱诗词，更爱鑫鑫</title>	
+<body><font size="12">
+
+<span id="jinrishici-sentence" style="text-align: center;display:block;">正在加载今日诗词....</span>
+<script src="jinrishici.js" charset="utf-8"></script>
 </font>
+<p id="match" style="display:none">关键词：</p>
+<p id="title" style="display:none"></p>
+<p id="content" style="display:none"></p>
+<p id="translate" style="display:none"></p>
+
+<script>
+function myFunction()
+{
+x=document.getElementById("match");
+x.style="inline"
+x=document.getElementById("title");
+x.style="text-align: center;display:block;"
+x=document.getElementById("content");
+x.style="inline"
+x=document.getElementById("translate");
+x.style="inline"
+}
+</script>
+<input type=button value=下一句 onclick="location.reload()"></input>
+<input type=button value=更多信息 onclick="myFunction()"></input>
+
+
 </body>
 </html>
